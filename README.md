@@ -1,5 +1,7 @@
 # mondouko-delta
 
+[![Jekyll CI](https://github.com/mondouko/mondouko-delta/actions/workflows/jekyll.yml/badge.svg)](https://github.com/mondouko/mondouko-delta/actions/workflows/jekyll.yml)
+
 ## 問答庫について
 問答庫で覚えたい、知ってほしいと思う情報を**アウトプットを重視して**お伝えしています。
 <https://mondouko.com/>
