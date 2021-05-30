@@ -1,0 +1,374 @@
+body{
+	background-color:#cccccc;
+}
+#icon{
+	width:40px;
+	height:40px;
+}
+#icon path{
+	fill:var(--themecolor) !important;
+}
+#icon{
+	width:40px !important;
+	display:none;
+}
+/*#header1{
+	background-color:white;
+	color:var(--themecolor);
+	margin:0;
+	width:calc(100vw - 20px);
+	padding:10px;
+	font-size:1em;
+	font-weight:600;
+	vertical-align:middle;
+	font-family:"游ゴシック light";
+	text-align:center;
+	box-shadow:0 0 10px #aaaaaa ;
+	position:fixed;
+	top:0;
+	z-index:10;
+	scroll-margin-top:;
+}*/
+#header1{
+	background-color:white;
+	color:var(--themecolor);
+	margin:0;
+	width:calc(100vw - 20px);
+	padding:10px;
+	font-size:1em;
+	font-weight:600;
+	vertical-align:middle;
+	text-align:center;
+	box-shadow:0 0 15px #cccccc;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:10;
+}
+@media(min-width:1000px){
+	#header1 .disp{
+		width:800px !important;
+		height:70vh !important;
+	}
+}
+
+#header1 .disp{
+	pointer-events:auto !important;
+	opacity:1 !important;
+	box-shadow:0 0 0  1000px rgba(0,0,0,0.7) !important;
+}
+@media(max-width:1000px){
+	#header1 .disp{
+		width:80vw !important;
+		height:70vh !important;
+	}
+}
+
+#h-space{
+	position:absolute;
+	top:0;
+	height:60px;
+	z-index:-1;
+	width:100%;
+	max-width:1000px;
+}
+
+
+
+
+/*記事内での便利ツール*/
+	#h-tools{
+		display:flex !important;
+		flex-wrap:nowrap;
+		justify-content:space-around;
+		margin-right:10px !important;
+		cursor:default !important;
+		position:relative;
+		align-items:center;
+	}
+	@media(max-width:500px){
+		#h-tools{
+			margin-right:0 !important;
+		}
+	}
+	#h-tab{
+		font-size:1.5em;
+		cursor:pointer !important;
+	}
+	#h-tools > *{
+		margin:0 8px !important;
+		cursor:pointer;
+	}
+	@media(min-width:500px){
+		#h-tools > *{
+			margin:0 20px !important;
+		}
+	}
+	#h-toggle,#h-reload,#h-index{
+		display:none;
+	}
+	article #h-top,article #h-toggle,article #h-index{
+		display:block !important;
+	}
+	#h-top{
+		font-size:1.5em;
+		margin-right:10px;
+		cursor:pointer !important;
+	}
+	#h-toggle{
+		height:25px;
+		width:45px;
+	}
+	#h-toggle div{
+		height:20px;
+		width:20px;
+		top:2.5px;
+	}
+	#h-toggle.toggleon .toggle{
+		transform:translateX(18px);
+	}
+	#h-index{
+		font-size:1.5em;
+		margin-right:10px;
+		cursor:pointer !important;
+		position:relative;
+	}
+	#h-index-pop{
+		position:absolute;
+		top:70px;
+		right:30px;
+		width:200px;
+		max-height:50vh;
+		border-radius:10px;
+		border:solid 2px #777777;
+		background-color:white;
+		padding:15px 20px;
+		overflow-y:scroll;
+		text-align:left;
+		box-shadow:0 0 20px #aaaaaa;
+		transition:all ease 0.3s;
+		transform:translateY(30px);
+		pointer-events:none;
+		opacity:0;
+	}
+	.floatup{
+		pointer-events:auto !important;
+		opacity:1 !important;
+		transform:translateY(0px) !important;
+	}
+	#h-index-pop > div > a{
+		padding:0.3em 0.8em;
+	}
+	#h-index-pop *{
+		color:#888888 !important;
+		font-size:16px !important;
+	}/*
+	#h-index-pop > a:hover{
+		padding:0.3em;
+	}*/
+
+	#h-index-pop ul{
+		padding:0;
+		margin:5px 0;
+		margin-left:15px;
+	}
+	#h-index-pop li{
+		padding:0.3em 0.8em;
+		transition:all ease 0.3s !important;
+		font-weight:500;
+	}
+	#h-index-pop > div > a:hover,#h-index-pop li:hover{
+		background-color:whitesmoke !important;
+		border-radius:10px;
+		border:none !important;
+		color:black !important;
+		font-weight:bold;
+	}/*
+	#h-index-pop > div > a:hover{
+		padding:0.3em 1em;
+	}*/
+	#h-index-pop li:hover a{
+		color:black !important;
+	}
+
+	@media(max-width:500px){
+		#h-index,#h-tab,#h-top{
+			font-size:1.3em;
+		}
+	}
+
+
+
+
+/*ばー*/
+	
+
+	#h-menu, #h-input{
+		display:none;
+	}
+
+	#h-menu{
+		display:block;
+		z-index:4;
+		width:40vw;
+		height:35vh;
+		position:fixed;
+		overflow:scroll;
+		list-style-type:none;
+		background-color:white;
+		border-radius:10px;
+		top:0;
+		right:0;
+		left:0;
+		bottom:0;
+		margin:auto !important;
+		opacity:0;
+		transition: all cubic-bezier(0.65, 0.05, 0.29, 0.98) 0.3s;
+		pointer-events:none;
+	}
+	#h-menu::-webkit-scrollbar{
+		display:none;
+	}
+
+	#h-tab2{
+		width:100%;
+		font-size:1.5em;
+		padding:0.5em 0;
+		border-bottom:solid 1px #cccccc;
+		display:block;
+	}
+	#h-menu ul{
+		font-size:1.5em;
+		width:100%;
+		list-style-type: none;
+		margin:0;
+		padding:0;
+	}
+	#h-menu li{
+		margin:0;
+		padding:0.5em 1em;
+		border-bottom:solid 1px #cccccc;
+	}
+	@media(max-width:900px){
+		#h-container span{
+			display:none;
+		}
+		#h-tab{
+			display:block;
+		}
+	}
+
+#h-container{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	margin:auto;
+	width:100%;
+	max-width:700px;
+}
+#h-container > div{
+	margin:0;
+	display:inline-block;
+	vertical-align:middle;
+	cursor:pointer;
+}
+article #h-container span{
+	display:none;
+}
+#h-container span div{
+	margin:0 20px;
+	display:inline-block;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+#h-container div:hover{
+	color:var(--themecolor) !important;
+}
+
+#header1 a{
+	color:#333333;
+}
+
+#h-title{
+	height:40px;
+	display:inline-block;
+	margin:0;
+	margin-left:10px !important;
+}
+
+#h-mondouko{
+	font-size:1.5em;
+	font-weight:600;
+	height:40px;
+	display:inline-block;
+	margin-right:10px;
+}
+
+#h-mondouko a{
+	color:var(--themecolor);
+	line-height:40px;
+	/*margin-left:20px;*/
+}
+
+
+
+
+
+
+
+
+
+
+/*テーマの変更*/
+	#theme-change{
+		position:relative;
+		display:inline-block;
+	}
+	#theme-change p{
+		padding:0;
+		margin:10px 0;
+		margin-bottom:0;
+		line-height:1.5;
+		font-size:15px;
+		margin-bottom:10px;
+	}
+	#colorpicker{
+		display:none;
+		position:absolute;
+		background-color:white;
+		width:140px;
+		left:-60px;
+		top:30px;
+		padding:0;
+		z-index:20;
+		color:var(--themecolor);
+		z-index:15;
+		filter:drop-shadow(0px 0px 10px #cccccc);
+	}
+	#colorpicker:after{
+		content: "";
+	    position: absolute;
+	    top: -20px;
+	    left: calc(70px - 10px);
+	    z-index: 12;
+	    border: 10px solid transparent;
+	    border-bottom: 10px solid #ffffff;
+	}
+	#colorpicker > div{
+		padding:15px 10px;
+		border-bottom:solid 2px #dddddd;
+	}
+	#colorpicker input{
+		border: none;
+	    background-color: white;
+	    padding: 0;
+	    height: 30px;
+	    width: 100%;
+	    outline:none;
+	}
+	#colorpicker h2{
+		margin:0;
+		margin-bottom:5px;
+	}

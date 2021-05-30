@@ -1,0 +1,19 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p>{{ site.description | escape }}</p>
+      </div>
+      <div class="footer-col">
+        <ul class="social-media-list">
+          <li><a href="https://github.com/{{ site.GitHub }}" title="{{ site.GitHub }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>{{ site.GitHub | escape }}</a></li>
+          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</footer>
