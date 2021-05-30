@@ -1,0 +1,27 @@
+<head>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="「ほしい情報をあなたに」様々な知識を8ジャンルに分けてまとめます。クイズでのアウトプットも可能です。" name="description">
+  <meta property="og:title" content="知識の宝庫、問答庫">
+  <meta property="og:description" content="「ほしい情報をあなたに」様々な知識を8ジャンルに分けてまとめます。クイズでのアウトプットも可能です。">
+  <meta property="og:image" content="icon/icon_512.png">
+  <meta property = "og:type" content = "website">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+  <link rel="icon" href="{{ "/assets/image/favicon.ico" | relative_url }}">
+
+  <meta name = "theme-color" content = "#e65c1b">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+  <meta name = "viewport" content = "width=device-width,initial-scale=1">
+
+
+  {%- seo -%}
+
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+
+</head>
