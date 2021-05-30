@@ -21,6 +21,14 @@ gammaのソースコードはすべて生JSとhtml,CSSのみで書かれてお�
 ## 仕様
 GitHub Pages + Jekyllで運用されています。
 
+## 開発メンバー
+  - [植物好き（Mondouko_team）](https://github.com/mondouko_team)
+  - [0505Keitan](https://github.com/0505keitan)
+  - [まっさー🐍（massasnake）](https://github.com/massasnake)
+
+## ライター
+　- Coming Soon...
+
 ---
 
 # mondouko-gamma
