@@ -22,7 +22,7 @@ gammaのソースコードはすべて生JSとhtml,CSSのみで書かれてお�
 GitHub Pages + Jekyllで運用されています。
 
 ## 開発メンバー
-  - [植物好き（Mondouko_team）](https://github.com/mondouko_team)
+  - [植物好き（Mondouko_team）](https://github.com/mondoukoteam)
   - [0505Keitan](https://github.com/0505keitan)
   - [まっさー🐍（massasnake）](https://github.com/massasnake)
 
